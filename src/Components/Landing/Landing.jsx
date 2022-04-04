@@ -1,4 +1,7 @@
 import { Navbar } from "../Navbar/Navbar";
+const humble_landing = require("../../images/HumbleFood/Landing.png");
+const dogs_landing = require("../../images/Dogs/landing.png");
+
 export function Landing() {
   return (
     // <div className="container max-w-full h-screen bg-white text-black">
@@ -32,9 +35,38 @@ export function Landing() {
             Full Stack Developer
           </div>
         </div>
-        <div className="basis-1/2 flex flex-col max-h-full">
-          <div className="bg-blue-300 text-4xl">Work</div>
-          <div className="bg-red-200 h-96 ">images</div>
+        <div className="basis-1/2 flex flex-col h-3/4 max-h-full ">
+          <div className=" text-5xl pb-8">Work</div>
+          <div className=" h-full flex flex-row flex-wrap">
+            <div className="basis-1/2 h-1/2 flex items-center">
+              <img
+                src={humble_landing}
+                alt="humbleFood_landing"
+                className=" object-contain h-auto rounded-xl border-2 border-black"
+              />
+            </div>
+            <div className="basis-1/2 h-1/2 flex flex-col justify-between pt-10 pb-10">
+              <div>
+                texto textotexto textotexto textotexto textotexto textotexto
+                textotexto textotexto textotexto textotexto texto
+              </div>
+              <div>Ver mas</div>
+            </div>
+            <div className="basis-1/2 h-1/2 flex items-center">
+              <img
+                src={dogs_landing}
+                alt="dogs_landing"
+                className=" object-contain h-auto rounded-xl border-2 border-black"
+              />
+            </div>
+            <div className="basis-1/2 h-1/2 flex flex-col justify-between pt-10 pb-10">
+              <div>
+                texto textotexto textotexto textotexto textotexto textotexto
+                textotexto textotexto textotexto textotexto texto
+              </div>
+              <div>Ver mas</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
