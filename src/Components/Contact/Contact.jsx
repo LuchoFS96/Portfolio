@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button";
 import { Navbar } from "../Navbar/Navbar";
-import { sendEmail } from "./Email";
+
 const linkedin = require("../../images/Social_Networks/linkedin.png");
 const email = require("../../images/Social_Networks/email.png");
 const phone = require("../../images/Social_Networks/phone.png");
@@ -16,6 +16,7 @@ export function Contact() {
       e.target[1].value +
       "\nMensaje: " +
       e.target[2].value;
+
     // sendEmail("lucianobenavides96@hotmail.com", message);
     // console.log(e.target[0].value, e.target[1].value, e.target[2].value);
     alert("Your message has been sent to me via email successfully!");
@@ -33,16 +34,29 @@ export function Contact() {
             <div className="flex items-center w-max ">
               <img src={linkedin} />
               <p className=" text-lg pl-5">
-                https://www.linkedin.com/in/luciano-benavides/
+                <a
+                  href="https://www.linkedin.com/in/luciano-benavides/"
+                  target={"_blank"}
+                >
+                  https://www.linkedin.com/in/luciano-benavides/
+                </a>
               </p>
             </div>
             <div className="flex items-center w-max">
               <img src={github} />
-              <p className=" text-lg pl-5">https://github.com/LuchoFS96</p>
+              <p className=" text-lg pl-5">
+                <a href="https://github.com/LuchoFS96" target={"_blank"}>
+                  https://github.com/LuchoFS96
+                </a>{" "}
+              </p>
             </div>
             <div className="flex items-center w-max">
               <img src={email} />
-              <p className=" text-lg pl-5">lucianobenavides96@hotmail.com</p>
+              <p className=" text-lg pl-5">
+                <a href="mailto: lucianobenavides96@hotmail.com">
+                  lucianobenavides96@hotmail.com
+                </a>{" "}
+              </p>
             </div>
             <div className="flex items-center w-max">
               <img src={phone} />
@@ -56,25 +70,30 @@ export function Contact() {
           </h1>
           <div>
             <form
-              onSubmit={(e) => handleSubmit(e)}
               className="flex flex-col max-w-xl pl-64"
+              action="https://formsubmit.co/lucianobenavides96@hotmail.com"
+              method="POST"
             >
+              <input type="hidden" name="_captcha" value="false"></input>
               <input
                 type="text"
                 name="name"
                 className="text-center border-2"
                 placeholder="Please enter your full name"
+                required
               />
               <input
                 type="email"
                 name="email"
                 className="text-center border-2"
                 placeholder="Please enter your email"
+                required
               />
               <textarea
                 name="description"
                 className="text-center border-2 h-48 resize-none"
                 placeholder="What would you like to tell me?"
+                required
               />
               {/* <input
                 type="text"

@@ -1,5 +1,6 @@
 import { Navbar } from "../Navbar/Navbar";
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 const humble_landing = require("../../images/HumbleFood/Landing.png");
 const dogs_landing = require("../../images/Dogs/landing.png");
 
@@ -46,12 +47,15 @@ export function Landing() {
                 className=" object-contain h-auto rounded-xl border-2 border-black"
               />
             </div>
-            <div className="basis-1/2 h-1/2 flex flex-col justify-between items-center pt-10 pb-10">
-              <div>
-                texto textotexto textotexto textotexto textotexto textotexto
-                textotexto textotexto textotexto textotexto texto
+            <div className="basis-1/2 h-1/2 flex flex-col justify-evenly items-center pt-10 pb-10">
+              <div className="flex text-justify p-10">
+                Development of HumbleFood's e-commerce platform. It's primary
+                focus is for a speedy proccess when it comes to stores selling
+                their products on sale.
               </div>
-              <Button name={"Ver mas"} />
+              <Link to={"/experience"}>
+                <Button name={"More"} />
+              </Link>
             </div>
             <div className="basis-1/2 h-1/2 flex items-center">
               <img
@@ -60,13 +64,15 @@ export function Landing() {
                 className=" object-contain h-auto rounded-xl border-2 border-black"
               />
             </div>
-            <div className="basis-1/2 h-1/2 flex flex-col justify-between  items-center pt-10 pb-10">
-              <div>
-                texto textotexto textotexto textotexto textotexto textotexto
-                textotexto textotexto textotexto textotexto texto
+            <div className="basis-1/2 h-1/2 flex flex-col justify-evenly  items-center pt-10 pb-10">
+              <div className="flex text-justify p-10">
+                Development of an SPA (Single Page Application) where the user
+                can search and create breeds of dogs.
               </div>
               <div className="">
-                <Button name={"Ver mas"} />
+                <Link to={"/experience"}>
+                  <Button name={"More"} />
+                </Link>
               </div>
             </div>
           </div>
