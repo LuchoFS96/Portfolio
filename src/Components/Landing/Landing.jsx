@@ -1,4 +1,5 @@
 import { Navbar } from "../Navbar/Navbar";
+import { Button } from "../Button/Button";
 const humble_landing = require("../../images/HumbleFood/Landing.png");
 const dogs_landing = require("../../images/Dogs/landing.png");
 
@@ -45,12 +46,12 @@ export function Landing() {
                 className=" object-contain h-auto rounded-xl border-2 border-black"
               />
             </div>
-            <div className="basis-1/2 h-1/2 flex flex-col justify-between pt-10 pb-10">
+            <div className="basis-1/2 h-1/2 flex flex-col justify-between items-center pt-10 pb-10">
               <div>
                 texto textotexto textotexto textotexto textotexto textotexto
                 textotexto textotexto textotexto textotexto texto
               </div>
-              <div>Ver mas</div>
+              <Button name={"Ver mas"} />
             </div>
             <div className="basis-1/2 h-1/2 flex items-center">
               <img
@@ -59,12 +60,14 @@ export function Landing() {
                 className=" object-contain h-auto rounded-xl border-2 border-black"
               />
             </div>
-            <div className="basis-1/2 h-1/2 flex flex-col justify-between pt-10 pb-10">
+            <div className="basis-1/2 h-1/2 flex flex-col justify-between  items-center pt-10 pb-10">
               <div>
                 texto textotexto textotexto textotexto textotexto textotexto
                 textotexto textotexto textotexto textotexto texto
               </div>
-              <div>Ver mas</div>
+              <div className="">
+                <Button name={"Ver mas"} />
+              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,7 @@
+{
+  "title": "Dogs",
+  "url": "_-Z4KL9fvlE",
+  "description": "Dogs is an SPA (Single Page Application) that I developed as a standalone project for Henry's Bootcamp. The general idea is to create an application that displays different dog breeds along with relevant information about them, using the external API TheDogApi, allowing you to, among other things: -Search for dogs -Filter /Sort 𝘵𝘩𝘦𝘮 -Add new dogs This project also included pagination, a search bar, detailed information about each dog on a separate page, and a controlled form to create your own breed.  As for the visual design, I used pure CSS without external libraries.",
+  "link": "https://client-beta-steel.vercel.app/",
+  "github": "https://github.com/LuchoFS96/PI-Dogs"
+}

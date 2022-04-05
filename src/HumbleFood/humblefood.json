@@ -1,0 +1,7 @@
+{
+  "title": "HumbleFood",
+  "url": "NrpQTY3SK6w",
+  "description": "HumbleFood's e-commerce platform's primary focus is for a speedy proccess when it comes to stores selling their products on sale. Different types of users, each one with different functionalities available, payment methods through Paypal, notifications sent by email with NodeMailer, authentication implemented with the Auth0 library, are just some of the many components of HumbleFood. It's DB was based in collections from MongoDB, interacting with it through the Prisma ORM, and in the development enviorment of TypeScript. For the frontend, we used technologies such as React, Redux, TailwindCSS, and Material-UI for the web's design and various functionalities.",
+  "link": "https://humblefood.vercel.app/",
+  "github": "https://github.com/LuchoFS96/Front-End"
+}
