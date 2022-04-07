@@ -25,15 +25,15 @@ export function Contact() {
   return (
     <div className="flex flex-col h-screen max-h-screen">
       <Navbar />
-      <div className="flex flex-row h-full w-full justify-evenly">
-        <div className="basis-1/2 h-1/2  flex flex-col self-center border-r-2 border-double">
-          <h1 className="font-semibold text-3xl text-left pl-48 pt-10 pb-5 ">
+      <div className="flex flex-col md:flex-row h-full w-full justify-evenly">
+        <div className="basis-1/2 h-1/2  flex flex-col self-center md:border-r-2 border-double">
+          <h1 className="font-semibold text-3xl md:text-left md:pl-48 pt-10 pb-5 ">
             Find me on:
           </h1>
-          <div className="flex flex-col items-left pl-56 flex-wrap  h-full justify-evenly">
+          <div className="flex flex-col items-left md:pl-56 flex-wrap  h-full justify-evenly">
             <div className="flex items-center w-max ">
               <img src={linkedin} />
-              <p className=" text-lg pl-5">
+              <p className=" md:text-lg pl-5 w-9 md:w-max">
                 <a
                   href="https://www.linkedin.com/in/luciano-benavides/"
                   target={"_blank"}
@@ -52,7 +52,7 @@ export function Contact() {
             </div>
             <div className="flex items-center w-max">
               <img src={email} />
-              <p className=" text-lg pl-5">
+              <p className=" md:text-lg pl-5 w-9 md:w-max">
                 <a href="mailto: lucianobenavides96@hotmail.com">
                   lucianobenavides96@hotmail.com
                 </a>{" "}
@@ -65,12 +65,12 @@ export function Contact() {
           </div>
         </div>
         <div className="basis-1/2 h-1/2 self-center">
-          <h1 className="font-semibold text-3xl text-left pl-48 pt-10 pb-5 ">
+          <h1 className="font-semibold text-3xl md:text-left md:pl-48 pt-10 pb-5 ">
             Send me a message!
           </h1>
           <div>
             <form
-              className="flex flex-col max-w-xl pl-64"
+              className="flex flex-col max-w-xl md:pl-64"
               action="https://formsubmit.co/lucianobenavides96@hotmail.com"
               method="POST"
             >
@@ -101,7 +101,7 @@ export function Contact() {
                 className="text-center border-2 h-48"
                 placeholder="What would you like to say?"
               /> */}
-              <div className=" pt-3 flex justify-end">
+              <div className=" pt-3 flex justify-end md:pb-0 pb-5">
                 <button type="submit">
                   <Button name={"Send"} />
                 </button>

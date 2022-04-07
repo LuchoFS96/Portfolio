@@ -1,7 +1,7 @@
 export function Nav_Button({ name }) {
   return (
     <div>
-      <div className="flex py-2 px-5 w-max rounded bg-white text-black cursor-pointer">
+      <div className="md:flex py-2 px-5 w-max rounded bg-white text-black cursor-pointer">
         {name}
       </div>
     </div>

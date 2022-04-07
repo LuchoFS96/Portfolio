@@ -6,8 +6,8 @@ export function Cards() {
   //   let i = 0;
   return (
     <div className="flex flex-col flex-wrap justify-evenly pt-10 ">
-      <div className="flex flex-row justify-evenly ">
-        <div className="flex flex-col  basis-1/3 items-center border-r-2 border-dashed border-black">
+      <div className="flex md:flex-row flex-col justify-evenly ">
+        <div className="flex flex-col  basis-1/3 items-center md:border-r-2 border-dashed border-black">
           <div className="">
             <p className=" text-2xl font-semibold">Front-End</p>
             <div className="h-max">
@@ -21,12 +21,14 @@ export function Cards() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col basis-1/3 items-center border-r-2 border-dashed border-black">
-          <p className=" text-2xl font-semibold">Back-End</p>
+        <div className="flex flex-col basis-1/3 items-center md:border-r-2 border-dashed border-black">
+          <p className=" text-2xl font-semibold md:pt-0 md:pb-0 pt-10 pb-5">
+            Back-End
+          </p>
           <div className="h-full flex flex-col justify-evenly">
             {back_skills.map((skill, index) => {
               return (
-                <div key={index}>
+                <div key={index} className="md:pt-0 pt-6">
                   <Card skill={skill} />
                 </div>
               );
@@ -34,11 +36,13 @@ export function Cards() {
           </div>
         </div>
         <div className="flex flex-col basis-1/3 items-center">
-          <p className=" text-2xl font-semibold">DataBase</p>
+          <p className=" text-2xl font-semibold md:pt-0 md:pb-0 pt-10 pb-5">
+            DataBase
+          </p>
           <div className="h-full flex flex-col justify-evenly">
             {db_skills.map((skill, index) => {
               return (
-                <div key={index}>
+                <div key={index} className="md:pt-0 pt-6 md:pb-0 pb-3">
                   <Card skill={skill} />
                 </div>
               );

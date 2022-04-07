@@ -28,8 +28,8 @@ export function Landing() {
     // </div>
     <div className="flex flex-col h-screen max-h-screen">
       <Navbar />
-      <div className="flex flex-row h-screen items-center text-black ">
-        <div className="basis-1/2 flex flex-col">
+      <div className="flex flex-col md:flex-row h-screen items-center text-black ">
+        <div className="md:basis-1/2 flex flex-col pt-40 pb-44 sm:p-0 sm:h-auto">
           <div className="text-left text-6xl text pl-20  ">
             Luciano Benavides
           </div>
@@ -37,18 +37,18 @@ export function Landing() {
             Full Stack Developer
           </div>
         </div>
-        <div className="basis-1/2 flex flex-col h-3/4 max-h-full ">
+        <div className="md:basis-1/2 flex flex-col h-3/4 max-h-full ">
           <div className=" text-5xl pb-8">Work</div>
-          <div className=" h-full flex flex-row flex-wrap">
-            <div className="basis-1/2 h-1/2 flex items-center">
+          <div className=" h-full flex flex-col md:flex-row md:flex-wrap md:items-start items-center">
+            <div className="md:basis-1/2 md:h-1/2 flex items-center md:pt-0 pt-5">
               <img
                 src={humble_landing}
                 alt="humbleFood_landing"
-                className=" object-contain h-auto rounded-xl border-2 border-black"
+                className=" object-contain h-auto sm:w-max w-80 rounded-xl border-2 border-black "
               />
             </div>
-            <div className="basis-1/2 h-1/2 flex flex-col justify-evenly items-center pt-10 pb-10">
-              <div className="flex text-justify p-10">
+            <div className="md:basis-1/2 md:h-1/2 flex flex-col justify-evenly items-center pt-10 pb-10">
+              <div className="flex text-justify p-5 md:p-10">
                 Development of HumbleFood's e-commerce platform. It's primary
                 focus is for a speedy proccess when it comes to stores selling
                 their products on sale.
@@ -57,15 +57,15 @@ export function Landing() {
                 <Button name={"More"} />
               </Link>
             </div>
-            <div className="basis-1/2 h-1/2 flex items-center">
+            <div className="md:basis-1/2 md:h-1/2 flex items-center">
               <img
                 src={dogs_landing}
                 alt="dogs_landing"
-                className=" object-contain h-auto rounded-xl border-2 border-black"
+                className=" object-contain h-auto sm:w-max w-80 rounded-xl border-2 border-black"
               />
             </div>
             <div className="basis-1/2 h-1/2 flex flex-col justify-evenly  items-center pt-10 pb-10">
-              <div className="flex text-justify p-10">
+              <div className="flex text-justify p-5 md:p-10">
                 Development of an SPA (Single Page Application) where the user
                 can search and create breeds of dogs.
               </div>

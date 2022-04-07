@@ -8,8 +8,10 @@ export function Work({ title, url, description, link, github }) {
         <p className="text-3xl pb-5 font-bold">{title}</p>
         <Youtube url={url} />
       </div>
-      <div className="flex pl-20 pr-20 text-justify text-lg">{description}</div>
-      <div className="flex justify-evenly pt-5">
+      <div className="flex md:pl-20 md:pr-20 pl-5 pr-5 text-justify md:text-lg">
+        {description}
+      </div>
+      <div className="flex justify-evenly pt-5 pb-3">
         <a href={link} target="_blank">
           <Button name={"Live"} />
         </a>

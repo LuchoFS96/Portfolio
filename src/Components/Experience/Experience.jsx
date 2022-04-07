@@ -7,8 +7,8 @@ export function Experience() {
   return (
     <div className="flex flex-col h-screen max-h-screen">
       <Navbar />
-      <div className="h-full  flex">
-        <div className="basis-1/2 border-r-2 border-dashed border-black">
+      <div className="h-full flex md:flex-row flex-col">
+        <div className="basis-1/2 md:border-r-2 border-dashed border-black">
           <Work
             title={humbleFood.title}
             url={humbleFood.url}
